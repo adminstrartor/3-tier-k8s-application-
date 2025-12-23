@@ -15,6 +15,7 @@ spec:
       containers:
       - name: backend
         image: backend:1.0
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:
