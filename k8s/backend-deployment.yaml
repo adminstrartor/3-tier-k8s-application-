@@ -24,6 +24,14 @@ spec:
         - name: DB_USER
           value: root
         - name: DB_PASSWORD
-          value: root123
+          value: root
         - name: DB_NAME
-          value: appdb
+          value: testdb
+
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "300m"
+            memory: "512Mi"
